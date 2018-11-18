@@ -1,0 +1,13 @@
+<div id="chat-main-body">
+    <div id="chat-messages" #scrollMe [scrollTop]="scrollMe.scrollHeight">
+        <div *ngFor="let message of messages" [class.me]="message.isMe" [class.them]="!message.isMe" class="message-wrapper">
+            <div class="circle-wrapper animated bounceIn" [style.background-color]="message.colour"></div>
+            <div class="text-wrapper animated fadeIn" [innerText]="message.message"></div>
+        </div>
+    </div>
+    <div id="chat-input">
+        <mat-form-field id="chat-form-input">
+            <input matInput #messageInput (keydown.enter)="sendMessage(messageInput.value); messageInput.value = ''" placeholder="Your Message">
+        </mat-form-field>
+    </div>
+</div>

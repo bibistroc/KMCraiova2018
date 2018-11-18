@@ -1,0 +1,24 @@
+.aligner {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    justify-content: center;
+}
+
+.aligner-item {
+    flex: 1;
+}
+
+.aligner-item-fixed {
+    flex: none;
+}
+
+#email-form-input {
+    width: 300px;
+}
+
+#email-info-card {
+    width: 300px;
+    text-align: center;
+    font-size: 17px;
+}

@@ -1,0 +1,17 @@
+
+<div class="aligner">
+    <div class="aligner-item aligner-item-fixed">
+        <form class="email-form">
+            <mat-form-field id="email-form-input">
+                <input matInput type="email" name="email" [formControl]="emailFormControl" placeholder="Your Email Address">
+                <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">Please enter a valid email address</mat-error>
+                <mat-error *ngIf="emailFormControl.hasError('required')">Email is <strong>required</strong></mat-error>
+            </mat-form-field>
+            <br />
+            <br />
+            <button mat-flat-button color="primary" (click)="saveEmail()">Send</button>
+        </form>
+        <br /><br />
+        <mat-card id="email-info-card">If you want to receive the code used in this demo & the presentation, please enter your email address and click send. Thank you.</mat-card>
+    </div>
+</div>
