@@ -22,6 +22,10 @@ You need to deploy 2 resources inside azure:
 
   [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fbibistroc%2FKMCraiova2018%2Fmaster%2Fazure%2Fsignalr.azuredeploy.json)
 - Azure Cosmos DB
+   
+  You can click on the following link to deploy a resource on Azure:
+
+  [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fbibistroc%2FKMCraiova2018%2Fmaster%2Fazure%2Fcosmosdb.azuredeploy.json) 
 
 
 ### Backend
